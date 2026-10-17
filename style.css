@@ -131,7 +131,7 @@
         .hero {
             color: #fff;
             background: url(images/img2.jpeg) no-repeat center/cover;
-            padding: 56px 0 64px
+            padding: 54px 0 64px
         }
 
         .badge {
@@ -335,4 +335,19 @@
             font-size: .85rem;
             color: var(--muted);
             margin-top: 14px
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(15, 19, 20, 0.65),
+                    rgba(15, 19, 20, 0.75)), url("images/img2.jpeg") no-repeat center / cover;
+        }
+
+        /* Mobile */
+        @media (max-width: 639px) {
+            .hero-bg {
+                padding-top: 0;
+                padding-bottom: 0;
+                min-height: auto;
+                background-position: center;
+            }
         }
